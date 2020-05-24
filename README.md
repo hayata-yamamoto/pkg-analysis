@@ -117,6 +117,7 @@ These are very helpful to do this activities. Arigatou!
 - [Visual Studio Code](https://github.com/microsoft/vscode)
 - [PlantUML](https://github.com/plantuml/plantuml-server)
 - [JupyterLab](https://github.com/jupyterlab/jupyterlab)
+- [LaTeX Equation (CodeCogs)](https://www.codecogs.com/latex/eqneditor.php)
 
 **Extensions**
 - [VSCode PlantUML](https://github.com/qjebbs/vscode-plantuml)
