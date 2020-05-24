@@ -1,0 +1,193 @@
+@startuml "Python ABC Collections Diagram"
+
+
+package "collections.abc" {
+  ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py
+
+  abstract class Container {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L374
+    {abstract} __contains__: 
+  }
+  
+  abstract class Hashable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L84
+    {abstract} __hash__: 
+  }
+  
+  abstract class Iterable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L243
+    {abstract} __iter__
+  }
+
+  abstract class Iterator extends Iterable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L259
+    {abstract} __next__
+    __iter__:
+  }
+
+  abstract class Reversible extends Iterable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L293
+    {abstract} __reversed__
+  }
+
+  abstract class Generator extends Iterator {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L309
+    __next__: 
+    {abstract} send 
+    {abstract} throw 
+    close: 
+  }
+
+  abstract class Sized {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L359
+    {abstract} __len__
+  }
+
+  abstract class Callable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L398
+    {abstract} __call__
+  }
+
+  abstract class Collection extends Sized, Iterable, Container {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L388
+  }
+
+  abstract class Sequence extends Reversible, Collection {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L856
+    {abstract} __getitem__:
+    __iter__:
+    __contains__:
+    __reversed__:
+    index:
+    count:
+  }
+
+  abstract class MutableSequence extends Sequence {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L936
+    {abstract} __setitem__:
+    {abstract} __delitem__:
+    {abstract} insert:
+    append:
+    clear:
+    reverse:
+    extend:
+    pop:
+    remove:
+    __iadd__:
+  }
+
+  abstract class ByteString extends Sequence {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L923
+  }
+
+  abstract class Set extends Collection {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L416
+    __le__: 
+    __lt__:
+    __gt__:
+    __ge__:
+    __eq__:
+    from_iterable:
+    __and__:
+    isdisjoint: 
+    __or__:
+    __sub__:
+    __rsub__:
+    __xor__:
+    _hash:
+  }
+
+  abstract class MutableSet extends Set {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L556
+    {abstract} add: 
+    {abstract} discard: 
+    remove: 
+    pop:
+    clear:
+    __ior__:
+    __iand__:
+    __ixor__:
+    __isub__:
+  }
+
+  abstract class Mapping extends Collection {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L641
+    {abstract} __getitem__:
+    get:
+    __contains__:
+    keys:
+    items:
+    values:
+    __eq__:
+  }
+
+  abstract class MutableMapping extends Mapping {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L767
+    {abstract} __setitem__:
+    {abstract} __delitem__:
+    pop:
+    popitem:
+    clear:
+    update:
+    setdefault:
+  }
+
+  abstract class MappingView extends Sized {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L694
+    __init__:
+    __len__:
+    __repr__:
+  }
+
+  abstract class ItemsView extends MappingView, Set {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L725
+    _from_iterable:
+    __contains__:
+    __iter__:
+  }
+
+  abstract class KeysView extends MappingView, Set {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L708
+    _from_iterable:
+    __contains__:
+    __iter__:
+  }
+
+  abstract class ValuesView extends MappingView, Collection {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L749
+    __contains__:
+    __iter__:
+  }
+
+  abstract class Awaitable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L99
+    {abstract} __await__
+  }
+
+  abstract class Coroutine extends Awaitable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L114
+    {abstract} send
+    {abstract} throw
+    close: 
+  }
+
+  abstract class AsyncIterable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L158
+    {abstract} __aiter__
+  }
+
+  abstract class AsyncIterator extends AsyncIterable {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L173
+    {abstract} __anext__
+    __aiter__ : 
+  }
+  abstract class AsyncGenerator extends AsyncIterator {
+    ' https://github.com/python/cpython/blob/3.8/Lib/_collections_abc.py#L192
+    __anext__: 
+    {abstract} asend
+    {abstract} athrow
+    aclose: 
+  }
+
+}
+@enduml
