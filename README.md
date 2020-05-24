@@ -75,8 +75,7 @@ These are very helpful to do this activities. Arigatou!
 **Libraries**
 - [Networkx](https://github.com/networkx/networkx)
 
-
-## Reference
+## References
 **UML**
 - [PlantUML Overview](https://plantuml.com/ja/)
 - [Class Diagram](http://www.agilemodeling.com/style/classDiagram.htm)
@@ -90,8 +89,10 @@ These are very helpful to do this activities. Arigatou!
 - [Pythonの組み込みデータ型の分類表（ミュータブル等）
 ](https://gammasoft.jp/blog/python-built-in-types/)
 
-**Network Analysis**
+**Network Analysis & Graph Theory**
 - [Gremlin Load Data Format](https://docs.aws.amazon.com/neptune/latest/userguide/bulk-load-tutorial-format-gremlin.html)
 - [Networkx Documentation](https://networkx.github.io/documentation/stable/index.html)
 - [PageRank (Wikipedia)](https://en.wikipedia.org/wiki/PageRank#Python)
+- [グラフ理論](https://amzn.to/36p1qfm)
+- [グラフ理論入門 基本とアルゴリズム](https://amzn.to/36pOZQg)
 - [つながりのビックデータ解析 人間関係ネットワークの科学と活用](https://www.nii.ac.jp/userdata/shimin/documents/H28/160622_1stlec.pdf)
