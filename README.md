@@ -80,9 +80,7 @@ If your interest to AWS Neptune -> [here](https://aws.amazon.com/jp/neptune/)
 
 ## Analysis 
 
-Notebook -> [here](./network_analysis.ipynb)
-
-On this small dataset, I used
+Notebook: [here](./network_analysis.ipynb)
 
 ### [Degree Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html#networkx.algorithms.centrality.degree_centrality)
 
