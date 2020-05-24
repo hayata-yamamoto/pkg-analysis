@@ -1,0 +1,6 @@
+uml/
+out/
+.ipynb_checkpoints
+.python-version
+.git
+.venv
