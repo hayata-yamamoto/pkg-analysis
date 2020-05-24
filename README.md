@@ -1,5 +1,8 @@
 # Package Analysis through Network Analysis Methods
 
+[![Python 3.7](https://img.shields.io/badge/python-3.7-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![dockeri.co](https://dockeri.co/image/hayata/pkg-analysis)](https://hub.docker.com/r/hayata/pkg-analysis)
+
 ## What's this?
 
 The purpose of this repository is to apply some network analysis methods, which is precisely based on graph theory, to sample data. This repository **does not** have 
@@ -50,6 +53,8 @@ If your interest to AWS Neptune -> [here](https://aws.amazon.com/jp/neptune/)
 
 ## Analysis 
 
+Notebook -> [here](./network_analysis.ipynb)
+
 On this small dataset, I used
 
 - [Degree Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html#networkx.algorithms.centrality.degree_centrality) 
@@ -57,8 +62,7 @@ On this small dataset, I used
 - [Betweeness Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.betweenness_centrality.html#networkx.algorithms.centrality.betweenness_centrality)
 - [Page Rank](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank_numpy.html#networkx.algorithms.link_analysis.pagerank_alg.pagerank_numpy)
 
-Then, my interpretation was added, it's not important,though :)
-
+After those, my interpretation was added.
 
 ## Thanks
 
