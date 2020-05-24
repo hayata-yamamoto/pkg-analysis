@@ -54,7 +54,7 @@ Only on a diagram, I wrote down some functions to understand what functions are 
 - Avoided to write output type (I'm not confident)
 - `cls` means `@classmethod`
 
-[![Diagram](./out/uml/python-abc-collections/collections.abc.png)
+![Diagram](./out/uml/python-abc-collections/collections.abc.png)
 
 
 ### CSV
@@ -88,26 +88,26 @@ On this small dataset, I used
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=C(v)&space;=&space;\frac{deg(v)}{n-1}" target="_blank"><img src="https://latex.codecogs.com/png.latex?C(v)&space;=&space;\frac{deg(v)}{n-1}" title="C(v) = \frac{deg(v)}{n-1}" /></a>
 
-[![degree](./out/ipynb/degree.png)
+![degree](./out/ipynb/degree.png)
 
 ### [Closeness Centrarity](https://networkx.github.io/documentation/stable/reference/algorithms/centrality.html#closeness)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=C(v)&space;=&space;\frac{n-1}{\sum_{v}^{n-1}d(v,&space;u)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?C(u)&space;=&space;\frac{n-1}{\sum_{v}^{n-1}d(v,&space;u)}" title="C(u) = \frac{n-1}{\sum_{v}^{n-1}d(v, u)}" /></a>
 
 
-[![closeness](./out/ipynb/closeness.png)
+![closeness](./out/ipynb/closeness.png)
 
 ### [Betweeness Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.betweenness_centrality.html#networkx.algorithms.centrality.betweenness_centrality)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=C_B(v)&space;=&space;\sum_{s,&space;t&space;\in&space;V}&space;\frac{\sigma(s,&space;t|&space;v)}{\sigma(s,&space;t)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?C_B(v)&space;=&space;\sum_{s,&space;t&space;\in&space;V}&space;\frac{\sigma(s,&space;t|&space;v)}{\sigma(s,&space;t)}" title="C_B(v) = \sum_{s, t \in V} \frac{\sigma(s, t| v)}{\sigma(s, t)}" /></a>
 
-[![betweeness](./out/ipynb/betweeness.png)
+![betweeness](./out/ipynb/betweeness.png)
 
 ### [Page Rank](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank_numpy.html#networkx.algorithms.link_analysis.pagerank_alg.pagerank_numpy)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=R(u)&space;=&space;c&space;\sum_{v&space;\in&space;B_u}&space;\frac{R(v)}{N_v}" target="_blank"><img src="https://latex.codecogs.com/png.latex?R(u)&space;=&space;c&space;\sum_{v&space;\in&space;B_u}&space;\frac{R(v)}{N_v}" title="R(u) = c \sum_{v \in B_u} \frac{R(v)}{N_v}" /></a>
 
-[![pagerank](./out/ipynb/page_rank.png)
+![pagerank](./out/ipynb/page_rank.png)
 
 After those, my interpretation was added.
 
