@@ -10,7 +10,7 @@ The purpose of this repository is to apply some network analysis methods, which 
 
 - Academic or technical deep explanation
 - Meaningful background (I just played with data)
-- Insightful Results
+- Insightful results
 
 ## Setup
 
