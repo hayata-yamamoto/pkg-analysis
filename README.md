@@ -107,8 +107,6 @@ Notebook: [here](./network_analysis.ipynb)
 
 ![pagerank](./out/ipynb/page_rank.png)
 
-After those, my interpretation was added.
-
 ## Thanks
 
 These are very helpful to do this activities. Arigatou!
