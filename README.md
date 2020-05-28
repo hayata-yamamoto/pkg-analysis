@@ -95,18 +95,11 @@ Notebook: [here](./network_analysis.ipynb)
 
 ![degree](./out/ipynb/degree.png)
 
-### [Closeness Centrarity](https://networkx.github.io/documentation/stable/reference/algorithms/centrality.html#closeness)
-
-<a href="https://www.codecogs.com/eqnedit.php?latex=C(v)&space;=&space;\frac{n-1}{\sum_{v}^{n-1}d(v,&space;u)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?C(u)&space;=&space;\frac{n-1}{\sum_{v}^{n-1}d(v,&space;u)}" title="C(u) = \frac{n-1}{\sum_{v}^{n-1}d(v, u)}" /></a>
-
-
-![closeness](./out/ipynb/closeness.png)
-
-### [Betweeness Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.betweenness_centrality.html#networkx.algorithms.centrality.betweenness_centrality)
+### [Betweenness Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.betweenness_centrality.html#networkx.algorithms.centrality.betweenness_centrality)
 
 <a href="https://www.codecogs.com/eqnedit.php?latex=C_B(v)&space;=&space;\sum_{s,&space;t&space;\in&space;V}&space;\frac{\sigma(s,&space;t|&space;v)}{\sigma(s,&space;t)}" target="_blank"><img src="https://latex.codecogs.com/png.latex?C_B(v)&space;=&space;\sum_{s,&space;t&space;\in&space;V}&space;\frac{\sigma(s,&space;t|&space;v)}{\sigma(s,&space;t)}" title="C_B(v) = \sum_{s, t \in V} \frac{\sigma(s, t| v)}{\sigma(s, t)}" /></a>
 
-![betweeness](./out/ipynb/betweeness.png)
+![betweeness](./out/ipynb/betweenness.png)
 
 ### [Page Rank](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.link_analysis.pagerank_alg.pagerank_numpy.html#networkx.algorithms.link_analysis.pagerank_alg.pagerank_numpy)
 
