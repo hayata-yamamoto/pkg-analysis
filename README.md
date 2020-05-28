@@ -16,7 +16,14 @@ The purpose of this repository is to apply some network analysis methods, which 
 
 ### Assumptions
 
-> Python: ^3.7
+```bash 
+$ pyenv --version
+pyenv 1.2.18
+
+$ python --version 
+Python 3.7.6
+```
+
 
 ### Installation
 
