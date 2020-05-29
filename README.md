@@ -87,6 +87,8 @@ If your interest to AWS Neptune -> [here](https://aws.amazon.com/jp/neptune/)
 
 ## Analysis 
 
+I compute below three centralities to analyze this network in detail. Centrality can express "how important a node is in a network". By looking at the results, we can understand "what node (=class) is important?"
+
 Notebook: [here](./network_analysis.ipynb)
 
 ### [Degree Centrality](https://networkx.github.io/documentation/stable/reference/algorithms/generated/networkx.algorithms.centrality.degree_centrality.html#networkx.algorithms.centrality.degree_centrality)
@@ -106,6 +108,19 @@ Notebook: [here](./network_analysis.ipynb)
 <a href="https://www.codecogs.com/eqnedit.php?latex=R(u)&space;=&space;c&space;\sum_{v&space;\in&space;B_u}&space;\frac{R(v)}{N_v}" target="_blank"><img src="https://latex.codecogs.com/png.latex?R(u)&space;=&space;c&space;\sum_{v&space;\in&space;B_u}&space;\frac{R(v)}{N_v}" title="R(u) = c \sum_{v \in B_u} \frac{R(v)}{N_v}" /></a>
 
 ![pagerank](./out/ipynb/page_rank.png)
+
+### Ranking 
+
+By combining with these three results, I made a ranking table. As you know, Set, Mapping and Sequence is related to set, dict, list. Since these types are quite important to understand and use python in development. This result is seemed to be great and matched to our intuition or experience. 
+
+| name:String   |   Sum of rank value |
+|:--------------|--------------------:|
+| Collection    |                 3   |
+| Set           |                 8   |
+| Sequence      |                12.5 |
+| MappingView   |                16.5 |
+| Mapping       |                23.5 |
+
 
 ## Thanks
 
